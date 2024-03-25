@@ -14,12 +14,16 @@
   </li>
   {% endfor %}
 </ul>
-<form method="POST">
-  <textarea name="note" id="note" class="form-control"></textarea>
-  <br />
-  <div align="center">
-    <button type="submit" class="btn btn-success">Add Note</button>
+<div class="card">
+  <div class="card-body">
+    <form method="POST">
+      <textarea name="note" id="note" class="form-control"></textarea>
+      <br />
+      <small class="text-body-secondary">Last modified at <p class="card-text" id="demo" onload="myFunction()"></p></small>
+      <div align="center">
+        <button type="submit" class="btn btn-success">Add Note</button>
+      </div>
+    </form>
   </div>
-</form>
-
+</div>
 {% endblock %}
